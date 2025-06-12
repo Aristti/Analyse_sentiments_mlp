@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Critique :</h2>
+        <p>{{ review }}</p>
+        <h2>Sentiment :</h2>
+        <p class="result">{{ sentiment }}</p>
+        <a href="/">← Retour</a>
+    </div>
+</body>
+</html>
