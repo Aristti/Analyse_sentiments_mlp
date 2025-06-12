@@ -2,5 +2,3 @@ Flask
 flask
 numpy 
 nltk
-nltk.corpus 
-stopwords
