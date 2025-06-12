@@ -1,7 +1,6 @@
 Flask
 flask
 numpy 
-re
 nltk
 nltk.corpus 
 stopwords
