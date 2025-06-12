@@ -50,6 +50,8 @@ def predict_sentiment():
     prediction = predict(vect, model)
     sentiment = "Positive 😊" if prediction else "Negative 😞"
     return render_template("result.html", review=review, sentiment=sentiment)
+import os
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
