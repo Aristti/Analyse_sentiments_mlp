@@ -2,4 +2,4 @@ Flask
 flask
 numpy 
 nltk
-sklearn
+scikit-learn
