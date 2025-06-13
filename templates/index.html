@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IMDB Sentiment Classifier</title>
+    <title>Movies Sentiment Classifier</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
 </head>
 <body>
     <div class="container">
         <h1>Analyse de Sentiment</h1>
+        <h4>En général les critiques sont assez longues</h4>
         <form action="/predict" method="post">
             <textarea name="review" placeholder="Entrez votre critique ici..." required></textarea>
             <button type="submit">Analyser</button>
